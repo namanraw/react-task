@@ -1,0 +1,15 @@
+table tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+table tr:nth-child(odd) {
+    background-color: rgb(185, 185, 185);
+}
+table{
+    width: 100%;
+}
+.snumber{
+    width: 70px;
+}
+td{
+    text-align: center
+}

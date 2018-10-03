@@ -1,0 +1,14 @@
+#app{
+    background-color: gray;
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.containerOuterDiv{
+    background-color: white;
+    width: 60vw;
+    justify-content: flex-start;
+    height: 85vh;
+}

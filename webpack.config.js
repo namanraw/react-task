@@ -7,6 +7,7 @@ module.exports = {
     path: path.join(__dirname, "/dist"),
     filename: "index_one.js"
   },
+  
   module: {
     rules: [
       {
@@ -15,6 +16,10 @@ module.exports = {
         use: {
           loader: "babel-loader"
         }
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
       }
     ]
   },
@@ -22,5 +27,6 @@ module.exports = {
     new htmlWebpackPlugin({
       template: "./src/index.html"
     })
-  ]
+  ],
+  
 };

@@ -1,0 +1,15 @@
+.searchInput input {
+    flex: 1;
+    height: 50px;
+    margin: 0 18px;
+    border-color: transparent;
+    border-bottom: 2px solid;
+    outline: transparent;
+    font-size: 25px;
+    font-family: -webkit-body;
+}
+
+.searchInput {
+    display: flex;
+    flex: 1;
+}
