@@ -1,7 +1,7 @@
-table tr:nth-child(even) {
+table tbody tr:nth-child(odd) {
     background-color: #eeeeee;
 }
-table tr:nth-child(odd) {
+table tbody tr:nth-child(even) {
     background-color: rgb(185, 185, 185);
 }
 table{
@@ -12,4 +12,7 @@ table{
 }
 td{
     text-align: center
+}
+tr{
+    position: relative;
 }

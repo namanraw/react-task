@@ -10,7 +10,9 @@ export default class SearchInput extends Component {
   }
 
   handleChangeEvent = e => {
-    this.setState({ [e.target.name]: e.target.value });
+    this.setState({ [e.target.name]: e.target.value }, () =>
+      this.props.searchValue(this.state.searchVal)
+    );
   };
 
   render() {
@@ -19,7 +21,7 @@ export default class SearchInput extends Component {
         <input
           type="search"
           name="searchVal"
-          placeholder = "Search"
+          placeholder="Search"
           value={this.state.searchVal}
           onChange={this.handleChangeEvent}
         />

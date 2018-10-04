@@ -1,0 +1,13 @@
+td:hover i {
+  display: inline-block !important;
+  position: absolute;
+  right: 10%;
+}
+td {
+  position: relative;
+}
+td > i {
+  display: none !important;
+  font-size: 14px;
+  cursor: pointer;
+}
